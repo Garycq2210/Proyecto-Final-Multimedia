@@ -1,0 +1,216 @@
+{
+    "flujos": [
+        {
+            "flujo": "F1",
+            "proceso": "P1",
+            "sigProceso": "P2",
+            "pantalla": "ActualizarNotas",
+            "rol": "Kardex"
+        },
+        {
+            "flujo": "F1",
+            "proceso": "P2",
+            "sigProceso": "P3",
+            "pantalla": "EstabFechas",
+            "rol": "Kardex"
+        },
+        {
+            "flujo": "F1",
+            "proceso": "P3",
+            "sigProceso": "P4",
+            "pantalla": "SortearEst",
+            "rol": "Kardex"
+        },
+        {
+            "flujo": "F1",
+            "proceso": "P4",
+            "sigProceso": "P5",
+            "pantalla": "AsignarDyM",
+            "rol": "Kardex"
+        },
+        {
+            "flujo": "F1",
+            "proceso": "P5",
+            "sigProceso": null,
+            "pantalla": "AsignarCup",
+            "rol": "Kardex"
+        },
+        {
+            "flujo": "F1",
+            "proceso": "P6",
+            "sigProceso": "P7",
+            "pantalla": "VerMaterias",
+            "rol": "Estudiante"
+        },
+        {
+            "flujo": "F1",
+            "proceso": "P7",
+            "sigProceso": null,
+            "pantalla": "EsperaRyA",
+            "rol": "Estudiante"
+        },
+        {
+            "flujo": "F1",
+            "proceso": "P8",
+            "sigProceso": "P9",
+            "pantalla": "EsperarFecha",
+            "rol": "Estudiante"
+        },
+        {
+            "flujo": "F1",
+            "proceso": "P9",
+            "sigProceso": "P10",
+            "pantalla": "SeleccionMat",
+            "rol": "Estudiante"
+        },
+        {
+            "flujo": "F1",
+            "proceso": "P10",
+            "sigProceso": "P11",
+            "pantalla": "SeleccionPar",
+            "rol": "Estudiante"
+        },
+        {
+            "flujo": "F1",
+            "proceso": "P11",
+            "sigProceso": "P12",
+            "pantalla": "FinInscrip",
+            "rol": "Estudiante"
+        },
+        {
+            "flujo": "F1",
+            "proceso": "P12",
+            "sigProceso": "P13",
+            "pantalla": "Descargar",
+            "rol": "Estudiante"
+        },
+        {
+            "flujo": "F1",
+            "proceso": "P13",
+            "sigProceso": null,
+            "pantalla": "Recepcionar",
+            "rol": "Kardex"
+        }
+    ],
+    "seguimiento": [
+        {
+            "seguim": "S1",
+            "flujo": "F1",
+            "proceso": "P1",
+            "usuario": "U3",
+            "fecha_ini": "2026-06-01 19:02:51",
+            "fecha_fin": "2026-06-01 19:02:54"
+        },
+        {
+            "seguim": "S2",
+            "flujo": "F1",
+            "proceso": "P2",
+            "usuario": "U3",
+            "fecha_ini": "2026-06-01 19:02:54",
+            "fecha_fin": "2026-06-01 19:02:56"
+        },
+        {
+            "seguim": "S3",
+            "flujo": "F1",
+            "proceso": "P3",
+            "usuario": "U3",
+            "fecha_ini": "2026-06-01 19:02:56",
+            "fecha_fin": "2026-06-01 19:02:59"
+        },
+        {
+            "seguim": "S4",
+            "flujo": "F1",
+            "proceso": "P4",
+            "usuario": "U3",
+            "fecha_ini": "2026-06-01 19:02:59",
+            "fecha_fin": "2026-06-01 19:03:01"
+        },
+        {
+            "seguim": "S5",
+            "flujo": "F1",
+            "proceso": "P5",
+            "usuario": "U3",
+            "fecha_ini": "2026-06-01 19:03:01",
+            "fecha_fin": "2026-06-01 19:03:03"
+        },
+        {
+            "seguim": "S6",
+            "flujo": "F1",
+            "proceso": "P6",
+            "usuario": "U2",
+            "fecha_ini": "2026-06-01 19:03:14",
+            "fecha_fin": "2026-06-01 19:09:34"
+        },
+        {
+            "seguim": "S7",
+            "flujo": "F1",
+            "proceso": "P9",
+            "usuario": "U2",
+            "fecha_ini": "2026-06-01 19:09:34",
+            "fecha_fin": "2026-06-01 19:09:41"
+        },
+        {
+            "seguim": "S8",
+            "flujo": "F1",
+            "proceso": "P12",
+            "usuario": "U2",
+            "fecha_ini": "2026-06-01 19:09:41",
+            "fecha_fin": "2026-06-01 19:09:44"
+        },
+        {
+            "seguim": "S9",
+            "flujo": "F1",
+            "proceso": "P13",
+            "usuario": "U2",
+            "fecha_ini": "2026-06-01 19:09:44",
+            "fecha_fin": "2026-06-01 19:09:55"
+        }
+    ],
+    "validaciones": [
+        {
+            "flujo": "F1",
+            "proceso": "P6",
+            "si": "P9",
+            "no": "P7",
+            "esperar": "P8"
+        }
+    ],
+    "usuarios": [
+        {
+            "id": "U1",
+            "nombre": "Juan",
+            "paterno": "Canaviri",
+            "materno": "Cantuta",
+            "clave": "123",
+            "rol": "Estudiante",
+            "Fecha_inscripcion": "2026-05-31"
+        },
+        {
+            "id": "U2",
+            "nombre": "Pedro",
+            "paterno": "Sandoval",
+            "materno": "Aruquipa",
+            "clave": "123",
+            "rol": "Estudiante",
+            "Fecha_inscripcion": "2026-06-01"
+        },
+        {
+            "id": "U4",
+            "nombre": "María",
+            "paterno": "Mamani",
+            "materno": "Choque",
+            "clave": "123",
+            "rol": "Estudiante",
+            "Fecha_inscripcion": "2026-06-02"
+        },
+        {
+            "id": "U3",
+            "nombre": "Jose",
+            "paterno": "Quispe",
+            "materno": "Flores",
+            "clave": "123",
+            "rol": "Kardex",
+            "Fecha_inscripcion": null
+        }
+    ]
+}

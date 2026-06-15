@@ -1,0 +1,59 @@
+[
+    {
+        "flujo": "F1",
+        "proceso": "P1",
+        "proceso_siguiente": "P2",
+        "tipo": "I",
+        "pantalla": "documentos",
+        "rol": "Universitario"
+    },
+    {
+        "flujo": "F1",
+        "proceso": "P2",
+        "proceso_siguiente": "P3",
+        "tipo": "P",
+        "pantalla": "solicitud",
+        "rol": "Universitario"
+    },
+    {
+        "flujo": "F1",
+        "proceso": "P3",
+        "proceso_siguiente": "null",
+        "tipo": "C",
+        "pantalla": "verifica",
+        "rol": "Kardex"
+    },
+    {
+        "flujo": "F1",
+        "proceso": "P4",
+        "proceso_siguiente": "null",
+        "tipo": "C",
+        "pantalla": "existencia_en_sistema",
+        "rol": "Kardex"
+    },
+    {
+        "flujo": "F1",
+        "proceso": "P5",
+        "proceso_siguiente": "P6",
+        "tipo": "P",
+        "pantalla": "imprime_record",
+        "rol": "Kardex"
+    },
+
+    {
+        "flujo": "F1",
+        "proceso": "P6",
+        "proceso_siguiente": "-",
+        "tipo": "F",
+        "pantalla": "devuelve_Documentos",
+        "rol": "Kardex"
+    },
+    {
+        "flujo": "F1",
+        "proceso": "P7",
+        "proceso_siguiente": "-",
+        "tipo": "F",
+        "pantalla": "rechazado",
+        "rol": "Kardex"
+    }
+]

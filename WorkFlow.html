@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ejercicio 1 WorkFlow</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #e2e8f0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 45px;
+      border-radius: 22px;
+      width: 90%;
+      max-width: 520px;
+      text-align: center;
+      box-shadow: 0 15px 50px rgba(0,0,0,0.6);
+      backdrop-filter: blur(12px);
+      animation: fadeIn 0.8s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: #38bdf8;
+    }
+
+    h2 {
+      font-size: 16px;
+      margin-bottom: 25px;
+      color: #94a3b8;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    a button {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 14px;
+      background: rgba(56, 189, 248, 0.15);
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      color: #38bdf8;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      backdrop-filter: blur(8px);
+    }
+
+    a button:hover {
+      background: #38bdf8;
+      color: #0f172a;
+      transform: scale(1.04);
+      box-shadow: 0 10px 25px rgba(56, 189, 248, 0.4);
+    }
+
+    a button:active {
+      transform: scale(0.98);
+    }
+
+    footer {
+      margin-top: 25px;
+      font-size: 12px;
+      color: #64748b;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Ejercicio 1 - WorkFlow</h1>
+    <h2>Sistema de procesos académicos</h2>
+
+    <div class="buttons">
+
+      <a href="WF2/login.php">
+        <button>Solicitud de Récord Académico</button>
+      </a>
+
+      <a href="WF1/index.php">
+        <button>Inscripción de Materias</button>
+      </a>
+
+      <a href="Modelados.html">
+        <button>Modelados de Proceso</button>
+      </a>
+
+      <a href="index.html">
+        <button>Volver</button>
+      </a>
+
+    </div>
+
+    <footer>
+      Proyecto académico - Programación Multimedia
+    </footer>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto Final Programación Multimedia</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #e2e8f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .dashboard {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 45px;
+      border-radius: 22px;
+      width: 90%;
+      max-width: 750px;
+      box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(12px);
+      text-align: center;
+      animation: fadeIn 0.8s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: #38bdf8;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-top: 25px;
+      color: #f1f5f9;
+    }
+
+    .students {
+      list-style: none;
+      padding: 0;
+      margin: 15px 0 30px;
+    }
+
+    .students li {
+      padding: 10px;
+      margin: 8px 0;
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.08);
+      transition: 0.3s;
+    }
+
+    .students li:hover {
+      transform: scale(1.02);
+      background: rgba(56, 189, 248, 0.08);
+    }
+
+    .ci {
+      display: block;
+      font-size: 13px;
+      color: #94a3b8;
+      margin-top: 4px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    a button {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 14px;
+      background: #38bdf8;
+      color: #0f172a;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    a button:hover {
+      background: #0ea5e9;
+      transform: scale(1.04);
+    }
+
+    footer {
+      margin-top: 25px;
+      font-size: 12px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="dashboard">
+
+    <h1>Proyecto Final Programación Multimedia</h1>
+
+    <h2>Estudiantes</h2>
+
+    <ul class="students">
+      <li>
+        Cantuta Quispe Elvis Alberth
+        <span class="ci">CI: 12606223</span>
+      </li>
+
+      <li>
+        Cardozo Quintanilla Gary Adriel
+        <span class="ci">CI: 6792475</span>
+      </li>
+
+      <li>
+        Charca Condori Ronaldo
+        <span class="ci">CI: 10070215</span>
+      </li>
+
+      <li>
+        Bautista Apaza Ruben Ignacio
+        <span class="ci">CI: 12765200</span>
+      </li>
+    </ul>
+
+    <h2>Menú de Ejercicios</h2>
+
+    <div class="buttons">
+      <a href="WorkFlow.html"><button>Ejercicio 1 Workflow</button></a>
+      <a href="AnimWeb/index.html"><button>Ejercicio 2 Animación Web</button></a>
+      <a href="Fotogrametria/index.html"><button>Ejercicio 3 Fotogrametría</button></a>
+    </div>
+
+    <footer>
+      Dashboard académico - Proyecto final
+    </footer>
+
+  </div>
+
+</body>
+</html>

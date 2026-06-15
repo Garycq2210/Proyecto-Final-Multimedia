@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1f3c88, #0f172a);
+}
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.login-card {
+    width: 380px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 35px 32px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.login-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 15px auto;
+    border-radius: 50%;
+    background: #e8f0ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+}
+
+.login-header h1 {
+    font-size: 26px;
+    color: #1f3c88;
+    margin-bottom: 8px;
+}
+
+.login-header p {
+    font-size: 14px;
+    color: #666;
+}
+
+.login-form {
+    width: 100%;
+}
+
+.login-form label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 7px;
+    margin-top: 16px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #c9c9c9;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+    border-color: #1f3c88;
+    box-shadow: 0 0 0 3px rgba(31, 60, 136, 0.15);
+}
+
+.login-form input[type="submit"] {
+    width: 100%;
+    margin-top: 25px;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #1f3c88;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.login-form input[type="submit"]:hover {
+    background: #14285f;
+    transform: translateY(-1px);
+}
+
+.mensaje-error {
+    margin-top: 18px;
+    padding: 10px;
+    background: #ffe5e5;
+    color: #c1121f;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.login-footer {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 13px;
+    color: #777;
+}
+.workflow-body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f0f2f5;
+    min-height: 100vh;
+}
+
+.workflow-container {
+    width: 85%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.workflow-header {
+    background: linear-gradient(135deg, #1f3c88, #0f172a);
+    color: white;
+    padding: 28px;
+    border-radius: 14px 14px 0 0;
+    text-align: center;
+}
+
+.workflow-header h1 {
+    margin: 0;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.workflow-header p {
+    margin-top: 8px;
+    font-size: 15px;
+    color: #dbeafe;
+}
+
+.workflow-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background: white;
+    padding: 18px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.workflow-info div {
+    background: #eef3ff;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    color: #1f3c88;
+}
+
+.workflow-card {
+    background: white;
+    padding: 30px;
+    border-radius: 0 0 14px 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.pantalla-contenido h2 {
+    color: #1f3c88;
+    margin-bottom: 18px;
+    border-bottom: 2px solid #1f3c88;
+    padding-bottom: 8px;
+}
+
+.pantalla-contenido p {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.pantalla-contenido label {
+    display: block;
+    font-weight: bold;
+    margin-top: 14px;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.pantalla-contenido input[type="text"],
+.pantalla-contenido input[type="date"],
+.pantalla-contenido input[type="number"],
+.pantalla-contenido select,
+.pantalla-contenido textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #c7c7c7;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.pantalla-contenido input:focus,
+.pantalla-contenido select:focus,
+.pantalla-contenido textarea:focus {
+    border-color: #1f3c88;
+    box-shadow: 0 0 0 3px rgba(31, 60, 136, 0.15);
+}
+
+.workflow-botones {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.btn-principal,
+.btn-secundario {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn-principal {
+    background: #1f3c88;
+    color: white;
+}
+
+.btn-principal:hover {
+    background: #14285f;
+}
+
+.btn-secundario {
+    background: #e5e7eb;
+    color: #333;
+}
+
+.btn-secundario:hover {
+    background: #d1d5db;
+}
+
+.workflow-volver {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.workflow-volver a {
+    color: #1f3c88;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.workflow-volver a:hover {
+    text-decoration: underline;
+}
+.bandeja-body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f0f2f5;
+    min-height: 100vh;
+}
+
+.bandeja-container {
+    width: 92%;
+    max-width: 1200px;
+    margin: 35px auto;
+}
+
+.bandeja-header {
+    background: linear-gradient(135deg, #1f3c88, #0f172a);
+    color: white;
+    padding: 28px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+}
+
+.bandeja-header h1 {
+    margin: 0;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.bandeja-header p {
+    margin-top: 8px;
+    color: #dbeafe;
+}
+
+.usuario-card {
+    margin-top: 22px;
+    background: white;
+    padding: 18px 24px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+    color: #333;
+}
+
+.usuario-card strong {
+    color: #1f3c88;
+}
+
+.acciones-superiores {
+    margin: 22px 0;
+}
+
+.btn-nuevo {
+    display: inline-block;
+    background: #1f3c88;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-nuevo:hover {
+    background: #14285f;
+    transform: translateY(-1px);
+}
+
+.tabla-card {
+    background: white;
+    margin-top: 25px;
+    padding: 24px;
+    border-radius: 14px;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.12);
+}
+
+.tabla-card h2 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    color: #1f3c88;
+    border-bottom: 2px solid #1f3c88;
+    padding-bottom: 8px;
+}
+
+.tabla-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.tabla-procesos {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.tabla-procesos th {
+    background: #1f3c88;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+.tabla-procesos td {
+    padding: 11px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    color: #333;
+}
+
+.tabla-procesos tr:nth-child(even) {
+    background: #f8faff;
+}
+
+.tabla-procesos tr:hover {
+    background: #eef3ff;
+}
+
+.tabla-terminados th {
+    background: #334155;
+}
+
+.btn-atender {
+    display: inline-block;
+    background: #16a34a;
+    color: white;
+    padding: 7px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.btn-atender:hover {
+    background: #15803d;
+}
+
+.mensaje-vacio {
+    background: #f8faff;
+    border: 1px dashed #9ca3af;
+    padding: 18px;
+    border-radius: 10px;
+    color: #555;
+    text-align: center;
+}
+
+.cerrar-sesion {
+    margin: 28px 0;
+    text-align: center;
+}
+
+.cerrar-sesion button {
+    background: #dc2626;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cerrar-sesion button:hover {
+    background: #b91c1c;
+}
+

@@ -1,0 +1,14 @@
+[
+    {
+        "flujo": "F1",
+        "proceso": "P3",
+        "proceso_si": "P4",
+        "proceso_no": "P1"
+    },
+    {
+        "flujo": "F1",
+        "proceso": "P4",
+        "proceso_si": "P5",
+        "proceso_no": "P7"
+    }
+]

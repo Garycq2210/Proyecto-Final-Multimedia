@@ -1,0 +1,26 @@
+[
+    {
+        "id": "U1",
+        "nombre": "Juan",
+        "paterno": "Canaviri",
+        "materno": "Cantuta",
+        "clave": "123",
+        "rol": "Universitario"
+    },
+    {
+        "id": "U2",
+        "nombre": "Pedro",
+        "paterno": "Sandoval",
+        "materno": "Aruquipa",
+        "clave": "123",
+        "rol": "Universitario"
+    },
+    {
+        "id": "U3",
+        "nombre": "Jose",
+        "paterno": "Quispe",
+        "materno": "Flores",
+        "clave": "123",
+        "rol": "Kardex"
+    }
+]
