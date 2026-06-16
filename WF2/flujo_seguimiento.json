@@ -1,3 +1,52 @@
 [
-   
+    {
+        "id_tramite": "T1",
+        "flujo": "F1",
+        "proceso": "P1",
+        "proceso_siguiente": "P2",
+        "fecha_ini": "14\/06\/2026 23:38:06",
+        "fecha_fin": "15\/06\/2026 15:11:53",
+        "usuario": "U2",
+        "datos": {
+            "carnet": "6792475",
+            "observacion_documentos": "nada"
+        }
+    },
+    {
+        "id_tramite": "T1",
+        "flujo": "F1",
+        "proceso": "P2",
+        "proceso_siguiente": "P3",
+        "fecha_ini": "15\/06\/2026 15:11:53",
+        "fecha_fin": "15\/06\/2026 15:11:59",
+        "usuario": "U2",
+        "datos": {
+            "motivo": "beca comedor"
+        }
+    },
+    {
+        "id_tramite": "T1",
+        "flujo": "F1",
+        "proceso": "P3",
+        "proceso_siguiente": "null",
+        "fecha_ini": "15\/06\/2026 15:11:59",
+        "fecha_fin": "15\/06\/2026 15:12:17",
+        "usuario": "U2",
+        "datos": {
+            "detalle_verificacion": "ninguno"
+        }
+    },
+    {
+        "id_tramite": "T1",
+        "flujo": "F1",
+        "proceso": "P4",
+        "proceso_siguiente": "null",
+        "fecha_ini": "15\/06\/2026 15:12:17",
+        "fecha_fin": "-",
+        "usuario": "U2",
+        "datos": {
+            "decision": "si",
+            "observacion_existencia": ""
+        }
+    }
 ]

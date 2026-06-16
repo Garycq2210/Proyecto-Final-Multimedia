@@ -10,7 +10,25 @@ if (!isset($_SESSION['id'])) {
 
 define('DATA_FILE', __DIR__ . '/flujo.json');
 
-function leer_json() {
+function buscar_usuario_por_id($id)
+{
+    $datos = leer_json();
+
+    if (!isset($datos['usuarios'])) {
+        return null;
+    }
+
+    foreach ($datos['usuarios'] as $usuario) {
+        if ($usuario['id'] === $id) {
+            return $usuario;
+        }
+    }
+
+    return null;
+}
+
+function leer_json()
+{
     if (!file_exists(DATA_FILE)) {
         return [];
     }
@@ -19,7 +37,8 @@ function leer_json() {
     return json_decode($contenido, true) ?? [];
 }
 
-function buscar_proceso($flujo, $proceso) {
+function buscar_proceso($flujo, $proceso)
+{
     $datos = leer_json();
 
     if (!isset($datos['flujos'])) {
@@ -35,7 +54,8 @@ function buscar_proceso($flujo, $proceso) {
     return null;
 }
 
-function buscar_seguimiento($seguim_id) {
+function buscar_seguimiento($seguim_id)
+{
     $datos = leer_json();
 
     if (!isset($datos['seguimiento'])) {
@@ -51,7 +71,8 @@ function buscar_seguimiento($seguim_id) {
     return null;
 }
 
-function tiene_permiso($seguim, $proceso) {
+function tiene_permiso($seguim, $proceso)
+{
     $usuario_id = $_SESSION['id'];
     $rol = $_SESSION['rol'];
 
@@ -108,34 +129,40 @@ if (!file_exists($archivoPantalla)) {
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title><?php echo htmlspecialchars($pantalla); ?></title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<main class="card">
+    <main class="card">
 
-    <div class="header-bandeja">
-        <div>
-            <h1><?php echo htmlspecialchars($pantalla); ?></h1>
-            <p>
-                Flujo: <strong><?php echo htmlspecialchars($seguim['flujo']); ?></strong> |
-                Proceso: <strong><?php echo htmlspecialchars($seguim['proceso']); ?></strong>
-            </p>
+        <div class="header-bandeja">
+            <div>
+                <h1><?php echo htmlspecialchars($pantalla); ?></h1>
+                <p>
+                    Flujo: <strong><?php echo htmlspecialchars($seguim['flujo']); ?></strong> |
+                    Proceso: <strong><?php echo htmlspecialchars($seguim['proceso']); ?></strong>
+                </p>
+            </div>
+
+            <div>
+                <a class="btn btn-secondary" href="bandeja.php">Volver a bandeja</a>
+            </div>
         </div>
 
-        <div>
-            <a class="btn btn-secondary" href="bandeja.php">Volver a bandeja</a>
-        </div>
-    </div>
+        <hr>
+        <?php
 
-    <hr>
+        $duenio = buscar_usuario_por_id($seguim['usuario']);
+        $seguimiento = $seguim;
+        include $archivoPantalla; ?>
 
-    <?php include $archivoPantalla; ?>
-
-</main>
+    </main>
 
 </body>
+
 </html>

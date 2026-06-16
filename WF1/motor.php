@@ -5,7 +5,8 @@ date_default_timezone_set('America/La_Paz');
 
 define('DATA_FILE', __DIR__ . '/flujo.json');
 
-function leer_json() {
+function leer_json()
+{
     if (!file_exists(DATA_FILE)) {
         return [];
     }
@@ -14,12 +15,14 @@ function leer_json() {
     return json_decode($contenido, true) ?? [];
 }
 
-function guardar_json($datos) {
+function guardar_json($datos)
+{
     $json = json_encode($datos, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
     file_put_contents(DATA_FILE, $json);
 }
 
-function buscar_usuario($id, $clave) {
+function buscar_usuario($id, $clave)
+{
     $datos = leer_json();
 
     if (!isset($datos['usuarios'])) {
@@ -38,7 +41,8 @@ function buscar_usuario($id, $clave) {
     return null;
 }
 
-function buscar_usuario_por_id($id) {
+function buscar_usuario_por_id($id)
+{
     $datos = leer_json();
 
     if (!isset($datos['usuarios'])) {
@@ -54,7 +58,8 @@ function buscar_usuario_por_id($id) {
     return null;
 }
 
-function buscar_proceso($flujo, $proceso) {
+function buscar_proceso($flujo, $proceso)
+{
     $datos = leer_json();
 
     if (!isset($datos['flujos'])) {
@@ -70,7 +75,8 @@ function buscar_proceso($flujo, $proceso) {
     return null;
 }
 
-function kardex_termino_p5() {
+function kardex_termino_p5()
+{
     $datos = leer_json();
 
     if (!isset($datos['seguimiento'])) {
@@ -90,7 +96,8 @@ function kardex_termino_p5() {
     return false;
 }
 
-function usuario_ya_inicio_flujo($usuario_id) {
+function usuario_ya_inicio_flujo($usuario_id)
+{
     $datos = leer_json();
 
     if (!isset($datos['seguimiento'])) {
@@ -106,7 +113,8 @@ function usuario_ya_inicio_flujo($usuario_id) {
     return false;
 }
 
-function generar_id_seguimiento($datos) {
+function generar_id_seguimiento($datos)
+{
     if (!isset($datos['seguimiento']) || count($datos['seguimiento']) === 0) {
         return 'S1';
     }
@@ -124,7 +132,8 @@ function generar_id_seguimiento($datos) {
     return 'S' . ($max + 1);
 }
 
-function iniciar_flujo($usuario_id, $flujo, $proceso) {
+function iniciar_flujo($usuario_id, $flujo, $proceso)
+{
     $datos = leer_json();
 
     if (!isset($datos['seguimiento'])) {
@@ -145,7 +154,8 @@ function iniciar_flujo($usuario_id, $flujo, $proceso) {
     guardar_json($datos);
 }
 
-function obtener_seguimiento_por_id($seguim_id) {
+function obtener_seguimiento_por_id($seguim_id)
+{
     $datos = leer_json();
 
     if (!isset($datos['seguimiento'])) {
@@ -161,7 +171,8 @@ function obtener_seguimiento_por_id($seguim_id) {
     return null;
 }
 
-function cerrar_y_crear_siguiente($seguim_id, $siguiente_proceso) {
+function cerrar_y_crear_siguiente($seguim_id, $siguiente_proceso)
+{
     $datos = leer_json();
 
     if (!isset($datos['seguimiento'])) {
@@ -200,7 +211,8 @@ function cerrar_y_crear_siguiente($seguim_id, $siguiente_proceso) {
     return true;
 }
 
-function tiene_permiso_sobre_seguimiento($seg, $usuario_id, $rol) {
+function tiene_permiso_sobre_seguimiento($seg, $usuario_id, $rol)
+{
     $proceso = buscar_proceso($seg['flujo'], $seg['proceso']);
 
     if ($proceso === null) {
@@ -218,7 +230,8 @@ function tiene_permiso_sobre_seguimiento($seg, $usuario_id, $rol) {
     return false;
 }
 
-function determinar_siguiente_proceso($seg) {
+function determinar_siguiente_proceso($seg)
+{
     $procesoActual = buscar_proceso($seg['flujo'], $seg['proceso']);
 
     if ($procesoActual === null) {
@@ -345,7 +358,9 @@ if ($accion === 'iniciar_flujo') {
 |--------------------------------------------------------------------------
 */
 
-if ($accion === 'avanzar') {
+if ($accion === 'avanzar') {    
+
+
     $seguim_id = $_POST['seguim'] ?? $_GET['seguim'] ?? '';
 
     $seg = obtener_seguimiento_por_id($seguim_id);
@@ -449,4 +464,3 @@ if ($accion === 'recepcionar_documentos') {
 
 header("Location: bandeja.php");
 exit;
-?>

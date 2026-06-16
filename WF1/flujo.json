@@ -93,78 +93,7 @@
         }
     ],
     "seguimiento": [
-        {
-            "seguim": "S1",
-            "flujo": "F1",
-            "proceso": "P1",
-            "usuario": "U3",
-            "fecha_ini": "2026-06-01 19:02:51",
-            "fecha_fin": "2026-06-01 19:02:54"
-        },
-        {
-            "seguim": "S2",
-            "flujo": "F1",
-            "proceso": "P2",
-            "usuario": "U3",
-            "fecha_ini": "2026-06-01 19:02:54",
-            "fecha_fin": "2026-06-01 19:02:56"
-        },
-        {
-            "seguim": "S3",
-            "flujo": "F1",
-            "proceso": "P3",
-            "usuario": "U3",
-            "fecha_ini": "2026-06-01 19:02:56",
-            "fecha_fin": "2026-06-01 19:02:59"
-        },
-        {
-            "seguim": "S4",
-            "flujo": "F1",
-            "proceso": "P4",
-            "usuario": "U3",
-            "fecha_ini": "2026-06-01 19:02:59",
-            "fecha_fin": "2026-06-01 19:03:01"
-        },
-        {
-            "seguim": "S5",
-            "flujo": "F1",
-            "proceso": "P5",
-            "usuario": "U3",
-            "fecha_ini": "2026-06-01 19:03:01",
-            "fecha_fin": "2026-06-01 19:03:03"
-        },
-        {
-            "seguim": "S6",
-            "flujo": "F1",
-            "proceso": "P6",
-            "usuario": "U2",
-            "fecha_ini": "2026-06-01 19:03:14",
-            "fecha_fin": "2026-06-01 19:09:34"
-        },
-        {
-            "seguim": "S7",
-            "flujo": "F1",
-            "proceso": "P9",
-            "usuario": "U2",
-            "fecha_ini": "2026-06-01 19:09:34",
-            "fecha_fin": "2026-06-01 19:09:41"
-        },
-        {
-            "seguim": "S8",
-            "flujo": "F1",
-            "proceso": "P12",
-            "usuario": "U2",
-            "fecha_ini": "2026-06-01 19:09:41",
-            "fecha_fin": "2026-06-01 19:09:44"
-        },
-        {
-            "seguim": "S9",
-            "flujo": "F1",
-            "proceso": "P13",
-            "usuario": "U2",
-            "fecha_ini": "2026-06-01 19:09:44",
-            "fecha_fin": "2026-06-01 19:09:55"
-        }
+        
     ],
     "validaciones": [
         {
@@ -183,7 +112,7 @@
             "materno": "Cantuta",
             "clave": "123",
             "rol": "Estudiante",
-            "Fecha_inscripcion": "2026-05-31"
+            "Fecha_inscripcion": "2026-06-15"
         },
         {
             "id": "U2",
@@ -192,7 +121,7 @@
             "materno": "Aruquipa",
             "clave": "123",
             "rol": "Estudiante",
-            "Fecha_inscripcion": "2026-06-01"
+            "Fecha_inscripcion": "2026-06-14"
         },
         {
             "id": "U4",
@@ -201,7 +130,7 @@
             "materno": "Choque",
             "clave": "123",
             "rol": "Estudiante",
-            "Fecha_inscripcion": "2026-06-02"
+            "Fecha_inscripcion": "2026-06-16"
         },
         {
             "id": "U3",
